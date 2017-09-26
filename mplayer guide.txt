@@ -1,0 +1,6 @@
+raspivid -t 999999 -w 640 -h 480 -fps 20 -o - | nc -u 172.24.1.130 5001
+
+
+ncat -ul 5001 | mplayer -fps 60 -demuxer h264es -
+
+openCv

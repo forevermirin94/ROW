@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jobush50.test2.SecondActivity">
+
+    <WebView
+        android:id="@+id/camera"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/camera"
+        android:layout_alignStart="@+id/camera"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/camera"
+        android:layout_alignRight="@+id/camera"
+        android:layout_alignTop="@+id/textViewDist"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="TextView" />
+
+    <RelativeLayout
+        android:id="@+id/layout_joystick"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textViewDist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/image_button_bg"></RelativeLayout>
+
+</RelativeLayout>
